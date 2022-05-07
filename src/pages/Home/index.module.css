@@ -1,0 +1,16 @@
+.rootPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #14173a;
+  background: radial-gradient(at top right, #1c2b4c 20%, #14173a 100%);
+}
+
+.area-scoreboard {
+  width: 70%;
+  margin-top: 5rem;
+}
+
+
