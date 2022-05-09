@@ -1,5 +1,5 @@
 import { Scoreboard } from "../../components/Scoreboard";
-import { Win } from "../../scenes/Win";
+import { ChooseHand } from "../../scenes/ChooseHand";
 import styles from "./index.module.css";
 
 const Home: React.FC = () => {
@@ -9,7 +9,7 @@ const Home: React.FC = () => {
         <Scoreboard />
       </div>
 
-      <Win />
+      <ChooseHand />
     </div>
   );
 };

@@ -1,0 +1,47 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.areaChooses {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 5rem;
+  width: 32.5rem;
+  align-items: center;
+}
+
+.horizontalBar {
+  width: 160px;
+  height: 20px;
+  background-color: #142038;
+}
+
+.bottomCircleWrapper {
+  position: relative;
+}
+
+.diagonalBars::before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 20px;
+  background-color: #142038;
+  top: -60px;
+  left: -80px;
+  transform: rotate(55deg);
+}
+
+.diagonalBars::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 20px;
+  background-color: #142038;
+  top: -60px;
+  right: -80px;
+  transform: rotate(-55deg);
+}

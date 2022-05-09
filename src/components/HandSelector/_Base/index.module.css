@@ -1,0 +1,42 @@
+.outBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #e6e6e6;
+  box-shadow: inset 0 8px 0 #bac0d2;
+}
+
+.circle img {
+  width: 60px;
+  height: 60px;
+}
+
+/* VARIANTS */
+.outBox--paper {
+  background-color: #5670f5;
+  box-shadow: 0 8px 0 #2946bf;
+}
+
+.outBox--scissors {
+  background-color: #eba823;
+  box-shadow: 0 8px 0 #c76c1b;
+}
+
+.outBox--rock {
+  background-color: #DF405E;
+  box-shadow: 0 8px 0 #9F1535;
+}

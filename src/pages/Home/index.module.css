@@ -5,11 +5,11 @@
   width: 100vw;
   height: 100vh;
   background: #14173a;
-  background: radial-gradient(at top right, #1c2b4c 20%, #14173a 100%);
+  background: radial-gradient(at top right, #1c2b4c 40%, #14173a 100%);
 }
 
 .area-scoreboard {
-  width: 70%;
+  width: 50%;
   margin-top: 5rem;
 }
 
