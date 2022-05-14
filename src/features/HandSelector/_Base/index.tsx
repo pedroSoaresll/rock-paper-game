@@ -1,6 +1,6 @@
 import styles from "./index.module.css";
 
-interface HandSelectorBaseProps {
+interface HandSelectorBaseProps extends React.HTMLAttributes<HTMLDivElement> {
   variant: Variants;
   children?: React.ReactNode;
 }
@@ -16,9 +16,10 @@ const variants: Record<Variants, string> = {
 export const HandSelectorBase: React.FC<HandSelectorBaseProps> = ({
   children,
   variant,
+  ...props
 }) => {
   return (
-    <div className={`${styles.outBox} ${variants[variant]}`}>
+    <div className={`${styles.outBox} ${variants[variant]}`} {...props}>
       <div className={styles.circle}>{children}</div>
     </div>
   );

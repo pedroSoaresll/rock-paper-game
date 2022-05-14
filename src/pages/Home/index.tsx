@@ -1,5 +1,5 @@
-import { Scoreboard } from "../../components/Scoreboard";
-import { ChooseHand } from "../../scenes/ChooseHand";
+import { Scoreboard } from "../../features/Scoreboard";
+import { ChooseHand } from "../../features/ChooseHand";
 import styles from "./index.module.css";
 
 const Home: React.FC = () => {
