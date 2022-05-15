@@ -1,15 +1,15 @@
-import ScissorsImg from "../../../assets/images/icon-scissors.svg";
+import ScissorsImg from "../../../../../assets/images/icon-scissors.svg";
 import { HandSelectorBase } from "../_Base";
-
-interface ScissorsSelectorProps {
-  onChoose(handSelected: string): void;
-}
+import { ScissorsSelectorProps } from "./types";
 
 export const ScissorsSelector: React.FC<ScissorsSelectorProps> = ({
   onChoose,
 }) => {
   return (
-    <HandSelectorBase variant="scissors" onClick={() => onChoose("scissors")}>
+    <HandSelectorBase
+      variant="scissors"
+      onClick={() => onChoose && onChoose("scissors")}
+    >
       <img src={ScissorsImg} alt="Icone mão de tesoura" />
     </HandSelectorBase>
   );

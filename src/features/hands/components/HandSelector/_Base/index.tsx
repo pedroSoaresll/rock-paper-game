@@ -1,13 +1,8 @@
+import { Hands } from "../../../types";
 import styles from "./index.module.css";
+import { HandSelectorBaseProps } from "./type";
 
-interface HandSelectorBaseProps extends React.HTMLAttributes<HTMLDivElement> {
-  variant: Variants;
-  children?: React.ReactNode;
-}
-
-type Variants = "paper" | "rock" | "scissors";
-
-const variants: Record<Variants, string> = {
+const variants: Record<Hands, string> = {
   paper: styles["outBox--paper"],
   scissors: styles["outBox--scissors"],
   rock: styles["outBox--rock"],
