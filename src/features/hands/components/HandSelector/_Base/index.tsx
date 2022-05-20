@@ -1,4 +1,4 @@
-import { Hands } from "../../../types";
+import { Hands } from "../../../shared/types";
 import styles from "./index.module.css";
 import { HandSelectorBaseProps } from "./type";
 

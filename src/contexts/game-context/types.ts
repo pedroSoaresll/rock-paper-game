@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Hands } from "../../features/hands/types";
+import { Hands } from "../../features/hands/shared/types";
 
 export interface GameProviderProps {
   children?: ReactNode;

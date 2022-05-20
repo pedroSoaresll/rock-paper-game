@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Hands } from "../../features/hands/types";
+import { Hands } from "../../features/hands/shared/types";
 import { GameContext } from "./context";
 import { GameContextProps, GameProviderProps, GameStatus } from "./types";
 

@@ -1,4 +1,4 @@
-import { Hands } from "../../../types";
+import { Hands } from "../../../shared";
 
 export interface HandSelectorBaseProps extends React.HTMLAttributes<HTMLDivElement> {
   variant: Hands;
