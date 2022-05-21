@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { Hands } from "../../features/hands/shared/types";
+import { HandId } from "../../features/hands/shared/types";
 import { GameContext } from "./context";
 import { GameContextProps, GameProviderProps, GameStatus } from "./types";
 
 export const GameProvider: React.FC<GameProviderProps> = ({ children }) => {
-  const [P1Hand, setP1Hand] = useState<Hands>();
+  const [P1Hand, setP1Hand] = useState<HandId>();
   const [status, setStatus] = useState<GameStatus>();
 
   const startGame = () => {

@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Hands } from "../../features/hands/shared/types";
+import { HandId } from "../../features/hands/shared/types";
 
 export interface GameProviderProps {
   children?: ReactNode;
@@ -12,6 +12,6 @@ export interface GameContextProps {
   finishGame(): void;
   startGame(): void;
   resetGame(): void;
-  P1Hand?: Hands;
-  setP1Hand(value: Hands): void;
+  P1Hand?: HandId;
+  setP1Hand(value: HandId): void;
 }

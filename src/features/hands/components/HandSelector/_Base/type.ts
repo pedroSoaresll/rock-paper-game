@@ -1,6 +1,6 @@
-import { Hands } from "../../../shared";
+import { HandId } from "../../../shared";
 
 export interface HandSelectorBaseProps extends React.HTMLAttributes<HTMLDivElement> {
-  variant: Hands;
+  variant: HandId;
   children?: React.ReactNode;
 }

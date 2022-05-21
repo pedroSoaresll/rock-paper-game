@@ -4,13 +4,13 @@ import { GameContext } from "../../contexts/game-context/context";
 import { ChooseHand } from "../../features/hands/shared";
 import { Scoreboard } from "../../features/score-board";
 import { DefaultLayout } from "../../layouts";
-import { Hands } from "../../features/hands/shared/types";
+import { HandId } from "../../features/hands/shared/types";
 
 const Start: React.FC = () => {
   const navigate = useNavigate()
   const { setP1Hand } = useContext(GameContext)
 
-  function handleHandSelected(value: Hands) {
+  function handleHandSelected(value: HandId) {
     setP1Hand(value)
     navigate('/match')
   }

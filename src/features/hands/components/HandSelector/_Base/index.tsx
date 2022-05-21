@@ -1,8 +1,8 @@
-import { Hands } from "../../../shared/types";
+import { HandId } from "../../../shared/types";
 import styles from "./index.module.css";
 import { HandSelectorBaseProps } from "./type";
 
-const variants: Record<Hands, string> = {
+const variants: Record<HandId, string> = {
   paper: styles["outBox--paper"],
   scissors: styles["outBox--scissors"],
   rock: styles["outBox--rock"],
