@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { GameContext } from "../../contexts/game-context/context";
 import { ChooseHand } from "../../features/hands/shared";
 import { Scoreboard } from "../../features/score-board";
-import { DefaultLayout } from "../../layouts/default";
+import { DefaultLayout } from "../../layouts";
 import { Hands } from "../../features/hands/shared/types";
 
 const Start: React.FC = () => {

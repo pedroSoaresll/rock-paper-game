@@ -1,14 +1,11 @@
-import { useContext } from "react";
-import { GameContext } from "../../contexts/game-context/context";
+import { YourPicked } from "../../features/hands/shared";
 import { Scoreboard } from "../../features/score-board";
-import { DefaultLayout } from "../../layouts/default";
+import { DefaultLayout } from "../../layouts";
 
 const Match: React.FC = () => {
-  const { P1Hand } = useContext(GameContext);
-
   return (
     <DefaultLayout top={<Scoreboard />}>
-      <p>The player 1 is: {P1Hand}</p>
+      <YourPicked />
     </DefaultLayout>
   );
 };

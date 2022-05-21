@@ -6,6 +6,7 @@
   height: 100vh;
   background: #14173a;
   background: radial-gradient(at top right, #1c2b4c 40%, #14173a 100%);
+  row-gap: 2rem;
 }
 
 .topArea {

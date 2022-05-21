@@ -4,7 +4,7 @@ import { ChooseHandProps } from "../../types";
 
 export const ChooseHand: React.FC<ChooseHandProps> = ({ onChoose }) => {
   return (
-    <div className={styles.wrapper}>
+    <div>
       <div className={styles.areaChooses}>
         <PaperSelector onChoose={onChoose} />
 

@@ -1,0 +1,18 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  column-gap: 4rem;
+  margin-top: 2rem;
+}
+
+.pickedText {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.2ch;
+  text-align: center;
+  display: block;
+  margin-bottom: 2rem;
+}
