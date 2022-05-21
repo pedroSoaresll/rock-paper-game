@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { GameContext } from "../../contexts/game-context/context";
-import { Scoreboard } from "../../features/Scoreboard";
+import { Scoreboard } from "../../features/score-board";
 import { DefaultLayout } from "../../layouts/default";
 
 const Match: React.FC = () => {

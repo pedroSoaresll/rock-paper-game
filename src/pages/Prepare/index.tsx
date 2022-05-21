@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Scoreboard } from "../../features/Scoreboard";
+import { Scoreboard } from "../../features/score-board";
 import { DefaultLayout } from "../../layouts/default";
 
 const Prepare: React.FC = () => {

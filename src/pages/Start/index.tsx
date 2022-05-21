@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { useNavigate } from 'react-router-dom'
 import { GameContext } from "../../contexts/game-context/context";
 import { ChooseHand } from "../../features/hands/shared";
-import { Scoreboard } from "../../features/Scoreboard";
+import { Scoreboard } from "../../features/score-board";
 import { DefaultLayout } from "../../layouts/default";
 import { Hands } from "../../features/hands/shared/types";
 
