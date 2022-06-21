@@ -1,35 +1,34 @@
 import { useGame } from "../../hooks";
 import { EmptyHand } from "../hands/components";
-import { HandId, renderHandBySelection } from "../hands";
+import { renderHandBySelection } from "../hands";
 import styles from "./index.module.css";
-import { useEffect, useState } from "react";
-import { getRandomHand } from "./utils";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const Match = () => {
-  const { P1Hand } = useGame();
-  const [computerHand, setComputerHand] = useState<HandId>();
+  const { P1Hand, P2Hand, generateP2Hand } = useGame();
+  const navigate = useNavigate()
+
+  const PickPlayer1 = P1Hand && renderHandBySelection(P1Hand);
+  const PickPlayer2 = P2Hand && renderHandBySelection(P2Hand);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setComputerHand(getRandomHand());
-    }, 3000);
+    if (!P1Hand) {
+      navigate('/')
+    }
+  }, [navigate, P1Hand])
 
-    return () => {
-      clearTimeout(timer)
-      setComputerHand(undefined)
-    };
-  }, []);
-
-  const Pick = P1Hand && renderHandBySelection(P1Hand);
-  const ComputerPick = computerHand && renderHandBySelection(computerHand);
+  useEffect(() => {
+    generateP2Hand();
+  }, [generateP2Hand]);
 
   return (
     <div className={styles.wrapper}>
       <span className={styles.pickedText}>You picked</span>
       <span className={styles.pickedText}>The house picked</span>
 
-      {Pick}
-      {ComputerPick || <EmptyHand />}
+      {PickPlayer1}
+      {PickPlayer2 || <EmptyHand />}
     </div>
   );
 };

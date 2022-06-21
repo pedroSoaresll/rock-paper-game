@@ -7,5 +7,7 @@ export const GameContext = createContext<GameContextProps>({
   resetGame: () => {},
   status: undefined,
   P1Hand: undefined,
+  P2Hand: undefined,
   setP1Hand: () => {},
+  generateP2Hand: () => {},
 });

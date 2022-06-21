@@ -5,6 +5,8 @@ function getRandomInt(max: number) {
 }
 
 export const getRandomHand = () => {
-  const randomNumber = getRandomInt(3);
-  return getHandByNumber(randomNumber);
+  const randomNumber = getRandomInt(3) - 1;
+  const handByNumber = getHandByNumber(randomNumber);
+
+  return handByNumber
 };

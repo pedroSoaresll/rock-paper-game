@@ -14,4 +14,6 @@ export interface GameContextProps {
   resetGame(): void;
   P1Hand?: HandId;
   setP1Hand(value: HandId): void;
+  P2Hand?: HandId
+  generateP2Hand(): void
 }
