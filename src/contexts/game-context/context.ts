@@ -1,5 +1,5 @@
-import { createContext } from "react";
-import { GameContextProps } from "./types";
+import { createContext } from 'react'
+import { GameContextProps } from './types'
 
 export const GameContext = createContext<GameContextProps>({
   finishGame: () => {},
@@ -10,4 +10,4 @@ export const GameContext = createContext<GameContextProps>({
   P2Hand: undefined,
   setP1Hand: () => {},
   generateP2Hand: () => {},
-});
+})
