@@ -1,31 +1,31 @@
-import { useMemo, useState } from "react";
-import { HandId } from "../../features/hands/shared/types";
-import { getRandomHand } from "../../features/match/utils";
-import { GameContext } from "./context";
-import { GameContextProps, GameProviderProps, GameStatus } from "./types";
+import { useMemo, useState } from 'react'
+import { HandId } from '../../features/hands/shared/types'
+import { getRandomHand } from '../../features/match/utils'
+import { GameContext } from './context'
+import { GameContextProps, GameProviderProps, GameStatus } from './types'
 
 export const GameProvider: React.FC<GameProviderProps> = ({ children }) => {
-  const [P1Hand, setP1Hand] = useState<HandId>();
-  const [P2Hand, setP2Hand] = useState<HandId>();
-  const [status, setStatus] = useState<GameStatus>();
+  const [P1Hand, setP1Hand] = useState<HandId>()
+  const [P2Hand, setP2Hand] = useState<HandId>()
+  const [status, setStatus] = useState<GameStatus>()
 
   const startGame = () => {
-    setStatus("start");
-  };
+    setStatus('start')
+  }
 
   const finishGame = () => {
-    setStatus("finish");
-  };
+    setStatus('finish')
+  }
 
   const resetGame = () => {
-    setStatus(undefined);
-    setP1Hand(undefined);
-    setP2Hand(undefined);
-  };
+    setStatus(undefined)
+    setP1Hand(undefined)
+    setP2Hand(undefined)
+  }
 
   const generateP2Hand = () => {
-    setP2Hand(getRandomHand());
-  };
+    setP2Hand(getRandomHand())
+  }
 
   const state: GameContextProps = useMemo(
     () => ({
@@ -39,7 +39,7 @@ export const GameProvider: React.FC<GameProviderProps> = ({ children }) => {
       generateP2Hand,
     }),
     [P1Hand, P2Hand, status]
-  );
+  )
 
-  return <GameContext.Provider value={state}>{children}</GameContext.Provider>;
-};
+  return <GameContext.Provider value={state}>{children}</GameContext.Provider>
+}

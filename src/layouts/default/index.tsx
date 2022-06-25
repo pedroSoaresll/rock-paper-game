@@ -1,9 +1,9 @@
-import { ReactNode } from "react";
-import styles from "./index.module.css";
+import { ReactNode } from 'react'
+import styles from './index.module.css'
 
 interface DefaultLayoutProps {
-  children: ReactNode;
-  top: ReactNode;
+  children: ReactNode
+  top: ReactNode
 }
 
 export const DefaultLayout: React.FC<DefaultLayoutProps> = ({
@@ -16,5 +16,5 @@ export const DefaultLayout: React.FC<DefaultLayoutProps> = ({
 
       {children}
     </div>
-  );
-};
+  )
+}

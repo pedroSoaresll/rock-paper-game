@@ -1,6 +1,10 @@
-import { PaperSelector, RockSelector, ScissorsSelector } from "../../../components";
-import styles from "./index.module.css";
-import { ChooseHandProps } from "../../types";
+import {
+  PaperSelector,
+  RockSelector,
+  ScissorsSelector,
+} from '../../../components'
+import styles from './index.module.css'
+import { ChooseHandProps } from '../../types'
 
 export const ChooseHand: React.FC<ChooseHandProps> = ({ onChoose }) => {
   return (
@@ -19,5 +23,5 @@ export const ChooseHand: React.FC<ChooseHandProps> = ({ onChoose }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

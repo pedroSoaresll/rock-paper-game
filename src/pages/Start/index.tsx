@@ -1,10 +1,10 @@
-import { useContext } from "react";
+import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { GameContext } from "../../contexts/game-context/context";
-import { ChooseHand } from "../../features/hands/shared";
-import { Scoreboard } from "../../features/score-board";
-import { DefaultLayout } from "../../layouts";
-import { HandId } from "../../features/hands/shared/types";
+import { GameContext } from '../../contexts/game-context/context'
+import { ChooseHand } from '../../features/hands/shared'
+import { HandId } from '../../features/hands/shared/types'
+import { Scoreboard } from '../../features/score-board'
+import { DefaultLayout } from '../../layouts'
 
 const Start: React.FC = () => {
   const navigate = useNavigate()
@@ -19,7 +19,7 @@ const Start: React.FC = () => {
     <DefaultLayout top={<Scoreboard />}>
       <ChooseHand onChoose={handleHandSelected} />
     </DefaultLayout>
-  );
-};
+  )
+}
 
-export default Start;
+export default Start

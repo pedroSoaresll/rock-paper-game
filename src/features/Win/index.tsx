@@ -1,5 +1,5 @@
-import styles from "./index.module.css";
+import styles from './index.module.css'
 
 export const Win: React.FC = () => {
-  return <div className={styles["area-selector-circle"]}></div>;
-};
+  return <div className={styles['area-selector-circle']}></div>
+}

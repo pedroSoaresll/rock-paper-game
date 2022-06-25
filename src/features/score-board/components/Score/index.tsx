@@ -6,5 +6,5 @@ export const Score: React.FC = () => {
       <span className={styles.subtitle}>Score</span>
       <span className={styles['text-point']}>13</span>
     </div>
-  );
-};
+  )
+}

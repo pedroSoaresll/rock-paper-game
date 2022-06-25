@@ -1,6 +1,6 @@
 import LogoImg from '../../../../assets/images/logo.svg'
 import styles from './index.module.css'
-import { Score } from '../Score';
+import { Score } from '../Score'
 
 export const Scoreboard: React.FC = () => {
   return (
@@ -11,5 +11,5 @@ export const Scoreboard: React.FC = () => {
 
       <Score />
     </div>
-  );
-};
+  )
+}

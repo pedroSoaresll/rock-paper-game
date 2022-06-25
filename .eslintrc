@@ -1,0 +1,23 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "globals": {
+    "React": true
+  },
+  "plugins": [
+    "prettier"
+  ],
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "react/prop-types": "off",
+    "prettier/prettier": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
-import { Button } from "../../components";
-import { Scoreboard } from "../../features/score-board";
-import { DefaultLayout } from "../../layouts";
+import { Link } from 'react-router-dom'
+import { Button } from '../../components'
+import { Scoreboard } from '../../features/score-board'
+import { DefaultLayout } from '../../layouts'
 
 const Prepare: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const Prepare: React.FC = () => {
         <Button>Começar</Button>
       </Link>
     </DefaultLayout>
-  );
-};
+  )
+}
 
-export default Prepare;
+export default Prepare
